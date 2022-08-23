@@ -1,0 +1,42 @@
+@import "./base.css";
+
+#app {
+  width: 100%;
+  font-weight: bolder;
+}
+
+/* a,
+.green {
+  text-decoration: none;
+  color: hsla(187, 89%, 46%, 0.8);
+  transition: 5s;
+  font-weight: bolder;
+} */
+
+/* @media (hover: hover) {
+  a:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+} */
+
+/* @media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
+@font-face {
+  font-family: 'Godzilla-Font';
+  src: url('../assets/fontfamily/GodzillaFont.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Crayon';
+  src: url('../assets/fontfamily/crayon.otf') format("opentype");
+}
