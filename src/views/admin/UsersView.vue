@@ -40,7 +40,7 @@ import Swal from 'sweetalert2'
 
 const users = reactive([])
 const currentPage = ref(1)
-const pageSize = 10
+const pageSize = 5
 const sliceUsers = computed(() => {
   return users.slice((currentPage.value * pageSize) - pageSize, (currentPage.value * pageSize))
 })
