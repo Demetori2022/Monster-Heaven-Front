@@ -43,7 +43,7 @@ const { addCart } = user
 const products = reactive([])
 
 const currentPage = ref(1)
-const pageSize = 8
+const pageSize = 12
 const sliceProducts = computed(() => {
   return products.slice((currentPage.value * pageSize) - pageSize, (currentPage.value * pageSize))
 })

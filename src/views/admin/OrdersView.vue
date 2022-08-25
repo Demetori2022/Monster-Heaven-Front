@@ -53,7 +53,7 @@ import Swal from 'sweetalert2'
 const orders = reactive([])
 const products = reactive([])
 const currentPage = ref(1)
-const pageSize = 1
+const pageSize = 10
 const sliceOrders = computed(() => {
   return orders.slice((currentPage.value * pageSize) - pageSize, (currentPage.value * pageSize))
 })

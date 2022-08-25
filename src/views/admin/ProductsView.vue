@@ -80,7 +80,7 @@ const products = reactive([])
 // form裡面要多一個 index(idx) 要修改表單內容比較方便
 const showModal = ref(false)
 const currentPage = ref(1)
-const pageSize = 5
+const pageSize = 10
 const sliceProducts = computed(() => {
   return products.slice((currentPage.value * pageSize) - pageSize, (currentPage.value * pageSize))
 })
