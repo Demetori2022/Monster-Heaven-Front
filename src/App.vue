@@ -1,6 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { NConfigProvider } from 'naive-ui'
+import { useUserStore } from './stores/user'
+
+useUserStore().getUser()
+
 const themeOverrides = {
   common: {
     primaryColorHover: '#9dc31e'
