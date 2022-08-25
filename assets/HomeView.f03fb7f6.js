@@ -1,1 +1,0 @@
-import{_ as o,o as c,c as _,p as t,f as s,d}from"./index.66c1016c.js";const a={},n=e=>(t("data-v-c71e48d6"),e=e(),s(),e),p={id:"container"},i=n(()=>d("h1",null,"\u5F8C\u53F0\u7BA1\u7406\u8005\u9801\u9762",-1)),r=[i];function l(e,f){return c(),_("div",p,r)}const u=o(a,[["render",l],["__scopeId","data-v-c71e48d6"]]);export{u as default};
