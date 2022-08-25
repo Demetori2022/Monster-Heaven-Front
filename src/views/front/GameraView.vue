@@ -110,7 +110,8 @@ init()
 .imgbox img {
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
+  object-position: 0px 0px;
 }
 
 .n-card {

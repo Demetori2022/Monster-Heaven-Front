@@ -160,7 +160,6 @@
   width: 80%;
   height: 100%;
   margin: auto;
-  padding-left: 150px;
 }
 
 header {
@@ -313,7 +312,6 @@ input:checked ~ .menu {
 #footer {
   width: 100%;
   background: #02263b;
-  padding: 50px 0;
 }
 
 .information {
@@ -361,6 +359,14 @@ input:checked ~ .menu {
 }
 
 @media screen and (min-width: 1200px) {
+
+  #footer > #container {
+  padding-left: 150px;
+  }
+
+  #footer {
+  padding: 50px 0;
+  }
 
   label {
     display: none;
