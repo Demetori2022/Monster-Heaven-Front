@@ -4,7 +4,8 @@
     <n-button type="warning" @click="openDialog('', -1)" class="addButton">
       新增商品
     </n-button>
-<n-modal v-model:show="showModal" preset="dialog" title="新增商品">
+<n-modal v-model:show="showModal" preset="dialog">
+<h2>{{ form._id.length > 0 ? '編輯商品' : '新增商品' }} </h2>
   <n-form v-model="form.valid" @submit.prevent='submitForm'>
         <n-form-item label="圖片">
           <n-upload v-model:file-list='form.image' list-type="image-card">

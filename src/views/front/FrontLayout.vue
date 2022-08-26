@@ -306,17 +306,25 @@ input:checked ~ .menu {
 .n-grid {
   width: 100%;
   gap:90px !important;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 #footer {
   width: 100%;
-  background: #02263b;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+              url('@/assets/dark.jpg') left/cover no-repeat fixed;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .information {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .info h1 {
@@ -350,7 +358,7 @@ input:checked ~ .menu {
 }
 
 #copyright {
-  background: #02263b;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9));
 }
 
 #copyright p {
@@ -359,14 +367,6 @@ input:checked ~ .menu {
 }
 
 @media screen and (min-width: 1200px) {
-
-  #footer > #container {
-  padding-left: 150px;
-  }
-
-  #footer {
-  padding: 50px 0;
-  }
 
   label {
     display: none;
@@ -388,6 +388,14 @@ input:checked ~ .menu {
 
   nav .menu li a {
     padding: 0 15px;
+  }
+
+  .info {
+    align-items: flex-start;
+  }
+
+  .information {
+    align-items: flex-start;
   }
 }
 </style>
