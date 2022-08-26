@@ -3,7 +3,8 @@
     <div class="logo">
       <img src="../../assets/logo.png">
     </div>
-    <h1>怪獸天國後台管理系統</h1>
+    <h1>後台管理系統</h1>
+    <hr>
     <n-menu v-model:value="activeKey" :options="menuOptions" />
   </div>
   <n-back-top :right="100" />
@@ -89,8 +90,8 @@ const menuOptions = reactive([
 .menubox h1 {
   color: bisque;
   text-align: center;
-  padding: 30px 0;
   font-size: 1.5rem;
+  padding-bottom: 10px;
 }
 
 .n-menu {

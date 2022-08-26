@@ -32,12 +32,12 @@
           </div>
           </div>
         </n-grid-item>
-        <n-grid-item class="second">
+        <n-grid-item class="second" data-aos="fade-left" data-aos-duration="2000">
           <div class="content-img">
             <img src="@/assets/about01.jpg">
           </div>
         </n-grid-item>
-        <n-grid-item class="third">
+        <n-grid-item class="third" data-aos="fade-right" data-aos-duration="2000">
           <div class="content-img">
             <img src="@/assets/about02.jpg">
           </div>
@@ -68,7 +68,7 @@
             </p>
           </div>
         </n-grid-item>
-        <n-grid-item class="sixth">
+        <n-grid-item class="sixth" data-aos="fade-left" data-aos-duration="2000">
           <div class="content-img">
             <img src="@/assets/about03.jpg">
           </div>

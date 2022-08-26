@@ -13,6 +13,7 @@
             <div class="content">
             <h1> {{product.name}}</h1>
             <h2> 商品價格 : {{product.price}}</h2>
+            <h2 style="white-space: pre;">{{ product.description }}</h2>
             <!-- <h3 style="white-space:pre"> {{product.description}}</h3> -->
             <n-space vertical>
               <n-input-number button-placement="both" v-model:value="product.quantity" placeholder="購買數量" :min="0" />
@@ -91,7 +92,7 @@ init()
 
 .n-card {
   width: 100%;
-  height: 550px;
+  height: 660px;
   display: flex;
   text-align: center;
   border: 3px solid white;
@@ -154,7 +155,7 @@ init()
 }
 
 .n-card >>> h2 {
-  margin: 10px 0;
+  margin:10px 0;
 }
 
 .cart-button {

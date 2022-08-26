@@ -2,6 +2,10 @@
 import { RouterLink, RouterView } from 'vue-router'
 import { NConfigProvider } from 'naive-ui'
 import { useUserStore } from './stores/user'
+import AOS from 'aos'
+import 'aos/dist/aos.css' // You can also use <link> for styles
+// ..
+AOS.init()
 
 useUserStore().getUser()
 
@@ -14,14 +18,6 @@ const themeOverrides = {
   },
   Menu: {
     itemTextColor: '#fff'
-  },
-  Table: {
-    tdColor: '#d1dfe7',
-    thColor: '#173446',
-    tdColorStriped: '#fdfdfb',
-    borderColor: '#5e6160',
-    thTextColor: '#cdedff',
-    tdTextColor: '#112797'
   },
   Pagination: {
     itemTextColor: '#ffe4c4',
