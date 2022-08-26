@@ -11,9 +11,9 @@
               </div>
             </template>
             <div class="content">
-            <h1> {{product.name}}</h1>
+            <p> {{product.name}}</p>
             <h2> 商品價格 : {{product.price}}</h2>
-            <h2 style="white-space: pre;">{{ product.description }}</h2>
+            <h3 style="white-space: pre;">{{ product.description }}</h3>
             <!-- <h3 style="white-space:pre"> {{product.description}}</h3> -->
             <n-space vertical>
               <n-input-number button-placement="both" v-model:value="product.quantity" placeholder="購買數量" :min="0"/>
@@ -136,14 +136,13 @@ init()
   text-align: center;
   width: 100%;
   height: 100%;
-  overflow:hidden;
-  text-overflow:ellipsis;
+  /* overflow:hidden;
+  text-overflow:ellipsis; */
 }
 
-.content >>> h1 {
+.content >>> p {
   overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
+  white-space:wrap;
   margin: 10px 0;
 
 }

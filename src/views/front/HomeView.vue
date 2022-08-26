@@ -21,7 +21,7 @@
       <n-grid class="c-grid" cols="1 s:2 m:3" responsive="screen">
         <n-grid-item>
         <RouterLink to="/godzilla">
-          <n-card class="characters" data-aos="fade-right" data-aos-duration="3000" title="哥吉拉">
+          <n-card class="characters" data-aos="fade-right" data-aos-duration="500" title="哥吉拉">
             <template #cover>
               <img src="https://www.tw1234k.com/wp-content/uploads/2020/04/BD5079-600x750.jpg">
             </template>
@@ -30,7 +30,7 @@
         </n-grid-item>
         <n-grid-item>
         <RouterLink to="/ultraman">
-          <n-card class="characters" data-aos="fade-down" data-aos-duration="3000" title="超人力霸王">
+          <n-card class="characters" data-aos="fade-down" data-aos-duration="500" title="超人力霸王">
             <template #cover>
               <img src="../../assets/02c.jpg">
             </template>
@@ -39,7 +39,7 @@
         </n-grid-item>
         <n-grid-item>
         <RouterLink to="/gamera">
-          <n-card class="characters" data-aos="fade-left" data-aos-duration="3000" title="卡美拉">
+          <n-card class="characters" data-aos="fade-left" data-aos-duration="500" title="卡美拉">
             <template #cover>
               <img src="../../assets/03c.jpg">
             </template>
@@ -52,7 +52,7 @@
   <div id="brands">
     <div id="container">
       <h1 class="title">品牌系列</h1>
-      <n-grid cols="1 s:2 m:3" responsive="screen" data-aos="fade-up" data-aos-duration="3000">
+      <n-grid cols="1 s:2 m:3" responsive="screen" data-aos="fade-up" data-aos-duration="500">
         <n-grid-item>
         <RouterLink to="/xplus">
           <n-card class="brands" title="X-PLUS">

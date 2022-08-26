@@ -12,7 +12,7 @@
           </n-upload>
         </n-form-item>
         <n-form-item label="商品名稱">
-          <n-input v-model:value='form.name' placeholder="請輸入商品名稱"/>
+          <n-input type="textarea" autosize v-model:value='form.name' placeholder="請輸入商品名稱"/>
         </n-form-item>
         <n-form-item label="商品價格">
           <n-input-number button-placement="both" v-model:value='form.price' placeholder="請輸入商品價格" />

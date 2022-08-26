@@ -11,9 +11,9 @@
               </div>
             </template>
             <div class="content">
-            <h1> {{product.name}}</h1>
+            <p style="white-space: pre;"> {{product.name}}</p>
             <h2> 商品價格 : {{product.price}}</h2>
-            <h2 style="white-space: pre;">{{ product.description }}</h2>
+            <h3 style="white-space: pre;">{{ product.description }}</h3>
             <!-- <h3 style="white-space:pre"> {{product.description}}</h3> -->
             <n-space vertical>
               <n-input-number button-placement="both" v-model:value="product.quantity" placeholder="購買數量" :min="0" />
@@ -127,9 +127,9 @@ init()
   height: 100%;
 }
 
-.n-card >>> .n-card__content {
+/* .n-card >>> .n-card__content {
   padding: 10px 30px;
-}
+} */
 
 .n-card >>> .content {
   display: flex;
@@ -138,24 +138,28 @@ init()
   text-align: center;
   width: 100%;
   height: 100%;
-  overflow:hidden;
-  text-overflow:ellipsis;
+  padding: 20px 0;
+  /* overflow:hidden;
+  text-overflow:ellipsis; */
 }
 
-.content >>> h1 {
+.content >>> p {
   overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  margin: 10px 0;
-
-}
-
-.n-card >>> h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* text-overflow:ellipsis; */
+  white-space:wrap;
+  /* margin: 5px 0; */
+  font-size: 1.3rem;
 }
 
 .n-card >>> h2 {
-  margin:10px 0;
+  /* margin:10px 0; */
+  margin: 5px 0;
+}
+
+.n-card >>> h3 {
+  /* margin: 10px 0; */
+  font-size: 1.2rem;
+  margin: 15px 0;
 }
 
 .cart-button {
@@ -165,6 +169,13 @@ init()
 .n-pagination {
   display: flex;
   justify-content: center;
+
+}
+
+.n-button {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-top: 10px;
 }
 
 /* .n-button {

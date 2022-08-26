@@ -32,12 +32,12 @@
           </div>
           </div>
         </n-grid-item>
-        <n-grid-item class="second" data-aos="fade-left" data-aos-duration="2000">
+        <n-grid-item class="second" data-aos="fade-left" data-aos-duration="500">
           <div class="content-img">
             <img src="@/assets/about01.jpg">
           </div>
         </n-grid-item>
-        <n-grid-item class="third" data-aos="fade-right" data-aos-duration="2000">
+        <n-grid-item class="third" data-aos="fade-right" data-aos-duration="500">
           <div class="content-img">
             <img src="@/assets/about02.jpg">
           </div>
@@ -48,7 +48,7 @@
               購買東西時最難受的事情莫過於等待出貨及到貨的時間了，
             </p>
             <p>
-              因此怪獸天國將在收到玩家訂單的第一時間以最快的速度進行出貨!
+              因此怪獸天國將在收到訂單的第一時間以最快的速度進行出貨!
             </p>
             <p>
               讓玩家能夠在最短的時間內收到自己喜愛的特攝模型。
@@ -58,7 +58,10 @@
         <n-grid-item class="fifth">
           <div class="content">
             <p>
-              怪獸天國將提供透明、公開的商品資訊，絕不販賣不良品以及炒作商品價格!
+              怪獸天國將提供透明、公開的商品資訊，
+            </p>
+            <p>
+              絕不販賣不良品以及炒作商品價格!
             </p>
             <p>
               玩家不僅能得到更多模型資訊,也能以合理價格購買到商品。
@@ -68,7 +71,7 @@
             </p>
           </div>
         </n-grid-item>
-        <n-grid-item class="sixth" data-aos="fade-left" data-aos-duration="2000">
+        <n-grid-item class="sixth" data-aos="fade-left" data-aos-duration="500">
           <div class="content-img">
             <img src="@/assets/about03.jpg">
           </div>

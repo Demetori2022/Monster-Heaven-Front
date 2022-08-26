@@ -94,12 +94,18 @@ const menuOptions = reactive([
   padding-bottom: 10px;
 }
 
+hr {
+  margin-bottom: 30px;
+  border: 1px solid bisque;
+}
+
 .n-menu {
   float: left;
   height: 50%;
 }
 
 .menubox >>> .n-menu-item-content-header a {
+  padding-left: 60px;
   color: bisque;
   font-size: 1.5rem;
 }
