@@ -122,6 +122,7 @@ hr {
   background-color: transparent;
   color: none;
 }
+
 /*
 nav a.router-link-exact-active:hover {
   background-color: transparent;

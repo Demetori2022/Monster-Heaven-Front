@@ -16,15 +16,18 @@ const themeOverrides = {
   Card: {
     titleTextColor: '#fff'
   },
-  Menu: {
-    itemTextColor: '#fff'
-  },
   Pagination: {
     itemTextColor: '#ffe4c4',
     itemTextColorActive: '#f29766',
     itemTextColorPressed: '#fff',
     buttonColor: '#ffe4c4',
     itemBorderActive: '#ffe4c4'
+  },
+  Dropdown: {
+    optionTextColor: '#ffe4c4',
+    color: '#02263b',
+    optionTextColorHover: '#ffa500',
+    optionColorHover: '#02263b'
   }
 }
 </script>

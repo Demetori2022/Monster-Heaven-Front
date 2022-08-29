@@ -49,7 +49,7 @@
 
 .n-grid {
   width: 100%;
-  gap:20px !important;
+  gap:50px !important;
   padding: 50px 0;
 }
 

@@ -23,7 +23,7 @@
         <RouterLink to="/godzilla">
           <n-card class="characters" data-aos="fade-right" data-aos-duration="500" title="哥吉拉">
             <template #cover>
-              <img src="https://www.tw1234k.com/wp-content/uploads/2020/04/BD5079-600x750.jpg">
+              <img src="../../assets/godzillaC.jpg">
             </template>
           </n-card>
         </RouterLink>
@@ -32,7 +32,7 @@
         <RouterLink to="/ultraman">
           <n-card class="characters" data-aos="fade-down" data-aos-duration="500" title="超人力霸王">
             <template #cover>
-              <img src="../../assets/02c.jpg">
+              <img src="../../assets/ultramanC.jpg">
             </template>
           </n-card>
         </RouterLink>
@@ -41,7 +41,7 @@
         <RouterLink to="/gamera">
           <n-card class="characters" data-aos="fade-left" data-aos-duration="500" title="卡美拉">
             <template #cover>
-              <img src="../../assets/03c.jpg">
+              <img style="object-fit: center" src="../../assets/gameraC.jpg">
             </template>
           </n-card>
         </RouterLink>
@@ -52,10 +52,10 @@
   <div id="brands">
     <div id="container">
       <h1 class="title">品牌系列</h1>
-      <n-grid cols="1 s:2 m:3" responsive="screen" data-aos="fade-up" data-aos-duration="500">
+      <n-grid cols="1 s:2 m:3" responsive="screen">
         <n-grid-item>
         <RouterLink to="/xplus">
-          <n-card class="brands" title="X-PLUS">
+          <n-card class="brands" title="X-PLUS" data-aos="fade-right" data-aos-duration="500">
             <template #cover>
               <img src="../../assets/xplus.png">
             </template>
@@ -64,7 +64,7 @@
         </n-grid-item>
         <n-grid-item>
         <RouterLink to="/shfiguarts">
-          <n-card class="brands" title="S.H.Figuarts">
+          <n-card class="brands" title="S.H.Figuarts" data-aos="fade-down" data-aos-duration="500">
             <template #cover>
               <img src="../../assets/shfiguarts.png">
             </template>
@@ -73,7 +73,7 @@
         </n-grid-item>
         <n-grid-item>
         <RouterLink to="/neca">
-          <n-card class="brands" title="NECA">
+          <n-card class="brands" title="NECA" data-aos="fade-left" data-aos-duration="500">
             <template #cover>
               <img src="../../assets/Neca.png">
             </template>
@@ -86,13 +86,17 @@
 </template>
 
 <style scoped>
+* {
+  overflow-x: hidden;
+}
+
 #container {
   width: 80%;
   margin: auto;
 }
 
 #carousel {
-  padding-top: 70px;
+  padding-top: 250px;
   width: 100%;
   height:100%;
   margin: auto;
@@ -100,6 +104,7 @@
 }
 
 #carousel .n-carousel__slide{
+  width: 100%;
   height:100%;
 }
 
@@ -139,7 +144,7 @@
 }
 
 .c-grid >>> .n-card-header {
-  width: 100%;
+  width: 80%;
   background: rgba(0,0,0,0.8
   );
   text-align: center;
@@ -147,6 +152,7 @@
 .n-grid >>> .n-card-header__main {
   color: white;
   font-size: 2rem;
+  font-weight: bolder;
 }
 
 .title {
@@ -156,8 +162,10 @@
 }
 
 .characters img {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   height: 400px;
+  object-fit: cover;
 }
 
 .brands img {
@@ -205,6 +213,12 @@
   color: black;
 }
 
+.brands img {
+  width: 60%;
+  height: 100px;
+  margin: auto;
+}
+
 .brands >>> .n-card-header__main {
   color: black;
 }
@@ -238,9 +252,14 @@
   height: 500px;
   }
 
+  .c-grid >>> .n-card-header {
+    width: 100%;
+  }
+
   .brands img {
-  width: 100%;
-  height: 90px;
+  width: 80%;
+  margin: auto;
+  height: 110px;
   }
 }
 
@@ -273,9 +292,13 @@
   height: 550px;
   }
 
+  .c-grid >>> .n-card-header {
+    width: 100%;
+  }
+
   .brands img {
   width: 100%;
   height: 120px;
-}
+  }
 }
 </style>

@@ -2,12 +2,12 @@
   <div id="character">
     <div id="container">
       <h1 class="title">角色系列</h1>
-      <n-grid cols="1 s:2 m:3" responsive="screen">
+      <n-grid cols="1 s:1 m:2 l:3" responsive="screen">
         <n-grid-item>
         <RouterLink to="/godzilla">
           <n-card class="characters" title="哥吉拉">
             <template #cover>
-              <img src="../../assets/01c.jpg">
+              <img src="../../assets/godzillaC.jpg">
             </template>
           </n-card>
         </RouterLink>
@@ -16,7 +16,7 @@
         <RouterLink to="/ultraman">
           <n-card class="characters" title="超人力霸王">
             <template #cover>
-              <img src="../../assets/02c.jpg">
+              <img src="../../assets/ultramanC.jpg">
             </template>
           </n-card>
         </RouterLink>
@@ -25,7 +25,7 @@
         <RouterLink to="/gamera">
           <n-card class="characters" title="卡美拉">
             <template #cover>
-              <img src="../../assets/03c.jpg">
+              <img src="../../assets/gameraC.jpg">
             </template>
           </n-card>
         </RouterLink>
@@ -49,8 +49,9 @@
 
 .n-grid {
   width: 100%;
-  gap:20px !important;
+  gap:50px !important;
   padding: 50px 0;
+
 }
 
 .n-card {
@@ -59,6 +60,16 @@
   align-items: center;
   background: transparent;
   border: none;
+}
+
+.characters {
+  height: 600px;
+}
+
+.characters img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 
 .n-grid >>> .n-card-header {
