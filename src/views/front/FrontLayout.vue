@@ -331,26 +331,31 @@ input:checked ~ .menu {
   font-size: 1.5rem;
   margin-bottom: 5%;
   color: bisque;
+  font-weight: bolder;
 }
 
 .info p {
   font-size: 1rem;
   color: white;
+  font-weight: bolder;
 }
 
 .information h1 {
   font-size: 1.5rem;
   margin-bottom: 5%;
   color: bisque;
+  font-weight: bolder;
 }
 
 .information a {
   font-size: 1rem;
   color: white;
+  font-weight: bolder;
 }
 
 .information p {
   font-size: 1rem;
+  font-weight: bolder;
 }
 
 .information a:hover {
@@ -364,6 +369,33 @@ input:checked ~ .menu {
 #copyright p {
   text-align: center;
   color: antiquewhite;
+}
+
+@media (min-width: 768px) {
+  .info h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .info p {
+    font-size: 1.1rem;
+    font-weight: bolder;
+  }
+
+  .information h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .information p {
+    font-size: 1.1rem;
+    font-weight: bolder;
+  }
+
+  .information a {
+    font-size: 1.1rem;
+    font-weight: bolder;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -392,6 +424,31 @@ input:checked ~ .menu {
 
   .info {
     align-items: flex-start;
+  }
+
+  .info h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+
+  .info p {
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+
+  .information h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+
+  .information p {
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+
+  .information a {
+    font-size: 1.3rem;
+    font-weight: bolder;
   }
 
   .information {
