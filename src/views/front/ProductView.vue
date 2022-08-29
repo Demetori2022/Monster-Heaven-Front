@@ -92,9 +92,9 @@ init()
 
 .n-card {
   width: 100%;
-  height: 660px;
+  height: 700px;
   display: flex;
-  text-align: center;
+  text-align: cover;
   border: 3px solid white;
   border-radius: 10px;
 }
@@ -107,13 +107,14 @@ init()
 
 .imgbox {
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 .imgbox img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  border-radius: 10px;
+  object-fit: center;
   object-position: 0px 0px;
 }
 
@@ -143,8 +144,13 @@ init()
   text-overflow:ellipsis; */
 }
 
+.n-card >>> .n-card__content {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+  border-radius: 10px;
+}
+
 .content >>> p {
-  overflow:hidden;
+  /* overflow:hidden; */
   /* text-overflow:ellipsis; */
   white-space:wrap;
   /* margin: 5px 0; */
@@ -153,12 +159,13 @@ init()
 
 .n-card >>> h2 {
   /* margin:10px 0; */
+  font-size: 18px;
   margin: 5px 0;
 }
 
 .n-card >>> h3 {
   /* margin: 10px 0; */
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 15px 0;
 }
 

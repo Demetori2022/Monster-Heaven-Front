@@ -11,7 +11,7 @@
               </div>
             </template>
             <div class="content">
-            <p> {{product.name}}</p>
+            <p style="white-space: pre;"> {{product.name}}</p>
             <h2> 商品價格 : {{product.price}}</h2>
             <h3 style="white-space: pre;">{{ product.description }}</h3>
             <!-- <h3 style="white-space:pre"> {{product.description}}</h3> -->
@@ -90,7 +90,7 @@ init()
 
 .n-card {
   width: 100%;
-  height: 660px;
+  height:700px;
   display: flex;
   text-align: center;
   border: 3px solid white;
@@ -105,13 +105,14 @@ init()
 
 .imgbox {
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 .imgbox img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  border-radius: 10px;
+  object-fit: centerr;
   object-position: 0px 0px;
 }
 
@@ -125,9 +126,9 @@ init()
   height: 100%;
 }
 
-.n-card >>> .n-card__content {
+/* .n-card >>> .n-card__content {
   padding: 10px 30px;
-}
+} */
 
 .n-card >>> .content {
   display: flex;
@@ -136,23 +137,31 @@ init()
   text-align: center;
   width: 100%;
   height: 100%;
+  padding: 20px 0;
   /* overflow:hidden;
   text-overflow:ellipsis; */
+}
+
+.n-card >>> .n-card__content {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+  border-radius: 10px;
 }
 
 .content >>> p {
   overflow:hidden;
   white-space:wrap;
-  margin: 10px 0;
+  font-size: 1.3rem;
 
-}
-
-.n-card >>> h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .n-card >>> h2 {
-  margin: 10px 0;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.n-card >>> h3 {
+  font-size: 1.1rem;
+  margin: 15px 0;
 }
 
 .cart-button {
