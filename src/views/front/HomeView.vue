@@ -105,7 +105,7 @@
 
 #carousel::before {
   content: '';
-  width: 200%;
+  width: 100%;
   height: 150px;
   position: absolute;
   bottom: 0;
